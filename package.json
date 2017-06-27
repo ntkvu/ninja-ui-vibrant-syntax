@@ -1,0 +1,16 @@
+{
+  "name": "ninja-ui-vibrant-syntax",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "A dark syntax theme",
+  "keywords": [
+    "dark",
+    "syntax",
+    "ninja"
+  ],
+  "repository": "https://github.com/ntkvu/ninja-ui-vibrant-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
