@@ -2,11 +2,7 @@
 // Editor styles (background, gutter, guides)
 
 atom-text-editor {
-  background-image: radial-gradient(
-    circle at top right,
-    lighten(@syntax-background-color, 3%),
-    @syntax-background-color
-  );
+  background-color: @syntax-background-color;
   color: @syntax-text-color;
 
   .line.cursor-line {
@@ -46,7 +42,7 @@ atom-text-editor {
   .find-result .region.region.region,
   .current-result .region.region.region {
     border-radius: 2px;
-    background-color: transparent;
+    background-color: @syntax-result-marker-color;
     transition: border-color .4s;
   }
   .find-result .region.region.region {

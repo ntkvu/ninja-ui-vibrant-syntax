@@ -1,9 +1,22 @@
-.syntax--source.syntax--js {
+.syntax--source.syntax--ts {
+  .syntax--class {
+    .syntax--variable {
+      &.syntax--parameter {
+        color: @hue-5;
+      }
+    }
+
+    .syntax--method.syntax--function {
+      color: @hue-2;
+    }
+  }
+
   .syntax--keyword.syntax--operator {
     color: @hue-1;
+    &.syntax--annotation {
+      color: @mono-1;
+    }
 
-    // keywords are definded in https://github.com/atom/language-javascript/blob/master/grammars/javascript.cson
-    // search "instanceof" for location
     &.syntax--delete,
     &.syntax--in,
     &.syntax--of,
@@ -15,7 +28,7 @@
     }
   }
 
-  .syntax--class {
+  .syntax--class, .syntax--interface {
     .syntax--definition.syntax--property {
       color: @hue-1-2;
     }

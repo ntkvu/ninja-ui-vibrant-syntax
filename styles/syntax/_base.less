@@ -1,5 +1,15 @@
 // Language syntax highlighting
 
+.syntax--object {
+  .syntax--unquoted, .syntax--key {
+    color: @hue-1-2;
+  }
+}
+
+.syntax--block, .syntax--brace, .syntax--square {
+  color: @mono-1;
+}
+
 .syntax--comment {
   color: @mono-3;
   font-style: italic;
@@ -82,12 +92,6 @@
   }
 }
 
-.syntax--object {
-  .syntax--string {
-    color: @hue-1-2;
-  }
-}
-
 .syntax--variable {
   color: @hue-5;
 
@@ -106,7 +110,6 @@
 
 .syntax--string {
   color: @hue-4;
-
 
   &.syntax--regexp {
     color: @hue-1;
@@ -243,7 +246,6 @@
   }
 
   &.syntax--separator {
-    background-color: #373b41;
     color: @mono-1;
   }
 
@@ -268,6 +270,12 @@
   &.syntax--illegal {
     color: @syntax-illegal-fg !important;
     background-color: @syntax-illegal-bg !important;
+  }
+}
+
+.syntax--decorator {
+  &.syntax--punctuation {
+    color: @hue-2;
   }
 }
 
