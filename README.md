@@ -1,1 +1,3 @@
-# ninja-ui-vibrant-syntax
+# Ninja Ui Vibrant Syntax
+
+![](sample.png)
